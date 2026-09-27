@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GHL CRM Build Roadmap — Real Estate Wholesaling</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="client">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="dot">GS</span>
+      <span>GHL Success Path<small>GoHighLevel CRM Build — Real Estate Wholesaling</small></span>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="viewswitch" id="viewswitch">
+      <button class="active" data-view="client">Client View</button>
+      <button data-view="admin">Internal</button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+<div class="layout">
+
+  <nav class="sidenav" id="sidenav">
+    <h4>Start here</h4>
+    <div class="navlink active" data-page="overview"><span class="ix">00</span> Overview</div>
+    <div class="navlink" data-page="plan"><span class="ix">01</span> The build plan</div>
+
+    <h4>What gets built</h4>
+    <div class="navlink" data-page="foundation"><span class="ix">02</span> Account foundation</div>
+    <div class="navlink" data-page="pipelines"><span class="ix">03</span> Pipelines &amp; stages</div>
+    <div class="navlink" data-page="fields"><span class="ix">04</span> Custom fields</div>
+    <div class="navlink" data-page="workflows"><span class="ix">05</span> Workflows</div>
+    <div class="navlink" data-page="notifs"><span class="ix">06</span> Tasks &amp; notifications</div>
+    <div class="navlink" data-page="reporting"><span class="ix">07</span> Dashboards &amp; reporting</div>
+
+    <h4>Delivery</h4>
+    <div class="navlink" data-page="handoff"><span class="ix">08</span> Testing &amp; handoff</div>
+    <div class="navlink" data-page="questions"><span class="ix">09</span> Discovery questions</div>
+  </nav>
+
+  <main class="main" id="main">
+
+    <!-- OVERVIEW -->
+    <section class="page active" data-page="overview">
+      <div class="eyebrow">GoHighLevel CRM build proposal</div>
+      <h1 class="title">A wholesaling CRM built around <span class="grn">how deals actually move.</span></h1>
+      <p class="lede">This is the build plan I'd propose for your account: the pipelines, stages, fields, workflows, dashboards and handoff documents, in the order I'd build them and with the reasoning behind each decision. It's written to be argued with — if your process differs from what's assumed here, that's exactly the conversation Discovery is for.</p>
+
+      <div class="adaptbar">
+        <span class="ic">◆</span>
+        <span><b>The core design decision:</b> wholesaling is two businesses running at once — acquisitions (finding motivated sellers) and dispositions (moving contracts to cash buyers). Most CRM builds collapse under that, because they treat it as one linear funnel. This build separates them into their own pipelines with their own stages, KPIs and automations, joined at the point a contract gets signed.</span>
+      </div>
+
+      <div class="panel" style="margin-top:20px">
+        <div class="eyebrow" style="margin-bottom:10px">What you asked for → where it lives</div>
+        <table class="ledger">
+          <thead><tr><th>Your requirement</th><th>Covered in</th></tr></thead>
+          <tbody>
+            <tr><td class="leakname">Pipelines &amp; stages — lead mgmt, acquisitions, dispositions, transactions</td><td><a href="#" data-jump="pipelines" style="color:var(--signal-deep);font-weight:600">03 · Pipelines &amp; stages</a></td></tr>
+            <tr><td class="leakname">Lead intake, assignment, follow-up, tasks, notifications</td><td><a href="#" data-jump="workflows" style="color:var(--signal-deep);font-weight:600">05 · Workflows</a> + <a href="#" data-jump="notifs" style="color:var(--signal-deep);font-weight:600">06 · Tasks &amp; notifications</a></td></tr>
+            <tr><td class="leakname">Workflows tracking deals from contact → contract → closing</td><td><a href="#" data-jump="workflows" style="color:var(--signal-deep);font-weight:600">05 · Workflows</a></td></tr>
+            <tr><td class="leakname">Dashboards &amp; reports on team activity and deal progress</td><td><a href="#" data-jump="reporting" style="color:var(--signal-deep);font-weight:600">07 · Dashboards &amp; reporting</a></td></tr>
+            <tr><td class="leakname">Reusable snapshots, testing, documentation, team handoff</td><td><a href="#" data-jump="handoff" style="color:var(--signal-deep);font-weight:600">08 · Testing &amp; handoff</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="principles">
+        <div class="principle">
+          <div class="k">How I work</div>
+          <h3>Blueprint before build.</h3>
+          <p>Nothing gets configured until your process is mapped and you've signed off on the structure. Building first and asking later is how CRMs end up with 40 workflows nobody understands.</p>
+        </div>
+        <div class="principle">
+          <div class="k">What you own</div>
+          <h3>A system you can run without me.</h3>
+          <p>Snapshot, written SOPs, per-role Loom walkthroughs and an automation inventory. If you clone to a second market or replace a VA, you're not waiting on my calendar.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <b>Next step:</b> the <a href="#" data-jump="questions" style="color:var(--signal-deep);font-weight:700">discovery questions</a> in section 09 are what I'd want to walk through before finalising scope and milestones. Happy to run that as a screen-share where you show me your current process live.
+      </div>
+
+      <div class="foot">
+        <span>GHL Success Path · GoHighLevel CRM build</span>
+        <span>Wholesaling build roadmap · v1.0</span>
+      </div>
+    </section>
+
+    <!-- BUILD PLAN -->
+    <section class="page" data-page="plan">
+      <div class="eyebrow">Sequence &amp; milestones</div>
+      <h1 class="title">The build plan.</h1>
+      <p class="lede">Roughly six weeks part-time, structured so each phase depends only on what's already been built. The order matters: compliance starts in week one because carrier approval is the long pole, and fields come before workflows because automation can only act on data that exists.</p>
+
+      <div class="admin-only adminbadge inline" style="margin-top:18px">Internal · click a phase to toggle progress</div>
+
+      <div class="progress-strip" id="progressStrip" style="margin-top:20px"></div>
+
+      <div class="panel"><div id="phaserail"></div></div>
+
+      <div class="callout">
+        <b>On timelines:</b> six weeks is the build estimate, not a promise made before seeing your process. If you already have a clean GHL account and registered A2P, this compresses. If we're migrating messy data from Podio or spreadsheets, Week 2 gets longer. I'd rather set the real number after Discovery than quote one now to look fast.
+      </div>
+    </section>
+
+    <!-- FOUNDATION -->
+    <section class="page" data-page="foundation">
+      <div class="eyebrow">Week 1 · Before anything else</div>
+      <h1 class="title">Account foundation &amp; compliance.</h1>
+      <p class="lede">The unglamorous layer that decides whether everything above it works. Most of it is one-time setup — but skipping any of it means rebuilding later, and skipping the compliance piece means your texts simply never arrive.</p>
+
+      <div class="panel" style="margin-top:22px">
+        <div class="eyebrow" style="margin-bottom:6px">Setup checklist</div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>Users, roles &amp; permissions</h4><p>Acquisitions reps, dispo reps, VAs, TC and admin each get a role scoped to what they should see. VAs working cold outreach shouldn't be able to delete pipelines.</p></div></div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>Phone numbers &amp; call routing</h4><p>Numbers provisioned per market or per campaign so call attribution is possible, with forwarding, recording and voicemail configured.</p></div></div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>A2P 10DLC brand &amp; campaign registration</h4><p>Submitted day one. Brand details must match your IRS-registered legal entity exactly — mismatched legal names are the most common rejection. Campaign description written in plain English describing seller outreach.</p></div></div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>Email domain authentication</h4><p>SPF, DKIM and DMARC on a dedicated sending domain so follow-up email lands in inboxes rather than spam.</p></div></div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>Calendars &amp; call windows</h4><p>Appointment calendars per rep, plus send-window guardrails so no automation fires outside legal calling hours in the recipient's timezone.</p></div></div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>Tag taxonomy &amp; naming conventions</h4><p>Agreed prefixes for tags, workflows and fields. Boring, and the single biggest factor in whether the account is still maintainable in a year.</p></div></div>
+        <div class="checkitem"><div class="bx"></div><div class="ci"><h4>Integrations</h4><p>E-sign, dialer, skip trace, list sources and title — connected natively or by webhook so leads don't need manual re-entry.</p></div></div>
+      </div>
+
+      <div class="warn">
+        <b>Compliance is a real constraint in this niche, not a footnote.</b> Every US carrier now blocks unregistered A2P traffic outright — not throttled, not spam-foldered, simply never delivered. Separately, the TCPA carries statutory damages of $500–$1,500 per text, and a skip-traced seller has not given consent, which is why "blast the whole list" is a legal trap rather than a growth strategy. My build includes registration, consent capture and documentation, opt-out handling (including natural-language opt-outs), DNC scrubbing, send-window enforcement and an internal suppression list. I'm not your attorney and this isn't legal advice — but I build the system so it can be run compliantly, and I'll flag it clearly if I see something in your current process that worries me.
+      </div>
+    </section>
+
+    <!-- PIPELINES -->
+    <section class="page" data-page="pipelines">
+      <div class="eyebrow">Week 2 · The core structure</div>
+      <h1 class="title">Pipelines &amp; stages.</h1>
+      <p class="lede">Four pipelines. Each stage has a definition — what it means, what has to be true to enter it, and what fires when a deal lands there. Stages that don't trigger anything or can't be reported on don't earn their place.</p>
+
+      <div id="pipeWrap" style="margin-top:22px"></div>
+
+      <div class="callout">
+        <b>Why Attempted Contact and Contacted are separate stages:</b> collapsing them is the single most common mistake I see in wholesaling builds. Without the split you cannot distinguish a dead phone number from a seller who heard the pitch and declined — which means your list quality and your rep performance are mixed into one unreadable number, and you can't tell whether to fire the data provider or coach the caller.
+      </div>
+    </section>
+
+    <!-- FIELDS -->
+    <section class="page" data-page="fields">
+      <div class="eyebrow">Week 2 · The data model</div>
+      <h1 class="title">Custom fields.</h1>
+      <p class="lede">Fields get built before workflows, because a workflow can only act on data that exists, and a dashboard can only report on a field somebody actually fills in. Required-field gates on key stages are what keep the data clean enough to trust six months from now.</p>
+
+      <div class="panel" style="margin-top:22px">
+        <div id="fieldWrap"></div>
+      </div>
+
+      <div class="callout">
+        <b>MAO is a calculated field, not a typed one.</b> It derives from ARV and repair estimate using whatever formula your team actually uses — 70% rule or your own. Calculating it in the CRM rather than in someone's head means every offer is consistent, and it makes "average margin by lead source" a real report instead of a guess.
+      </div>
+    </section>
+
+    <!-- WORKFLOWS -->
+    <section class="page" data-page="workflows">
+      <div class="eyebrow">Weeks 3–4 · Automation</div>
+      <h1 class="title">Workflows.</h1>
+      <p class="lede">Every workflow below has a trigger, a path, and a reason for existing. Core workflows ship in the main build; Phase 2 items are ones I'd typically add once the team is using the system and we can see where the real friction is.</p>
+
+      <div id="wfWrap" style="margin-top:22px"></div>
+
+      <div class="callout">
+        <b>A note on restraint:</b> it's easy to build sixty workflows and hand over a system nobody can debug. I'd rather ship twelve that the team understands, each documented with its trigger and owner, and add more once you've run real deals through it. Automation you can't explain is a liability, not an asset.
+      </div>
+    </section>
+
+    <!-- NOTIFICATIONS -->
+    <section class="page" data-page="notifs">
+      <div class="eyebrow">Week 3 · Nothing falls through</div>
+      <h1 class="title">Tasks &amp; notifications.</h1>
+      <p class="lede">The layer that turns a database into an operating system. Every one of these is automatic and tied to a pipeline event — no rep has to remember, and no manager has to chase.</p>
+
+      <div class="panel" style="margin-top:22px">
+        <div id="notifWrap"></div>
+      </div>
+
+      <div class="callout">
+        <b>Assignment logic is configurable to how you actually run:</b> straight round-robin, weighted by rep capacity, routed by market or by lead source, or manual claim from a shared queue. I'd want to hear which of those matches your team before wiring it — it's a five-minute change now and a painful one later.
+      </div>
+    </section>
+
+    <!-- REPORTING -->
+    <section class="page" data-page="reporting">
+      <div class="eyebrow">Week 5 · Visibility</div>
+      <h1 class="title">Dashboards &amp; reporting.</h1>
+      <p class="lede">Reports are downstream of everything else — they only work if the stages are meaningful and the fields get filled. These are the numbers I'd build views around, split by owner view and manager view.</p>
+
+      <div class="kpigrid" id="kpiWrap" style="margin-top:22px"></div>
+
+      <div class="panel" style="margin-top:18px">
+        <div class="eyebrow" style="margin-bottom:10px">Dashboard structure</div>
+        <table class="ledger">
+          <thead><tr><th>Dashboard</th><th>Audience</th><th>Answers</th></tr></thead>
+          <tbody>
+            <tr><td class="leakname">Deal Flow Overview</td><td>Ownership</td><td>What's in the pipeline, what it's worth, what's closing this month</td></tr>
+            <tr><td class="leakname">Marketing Attribution</td><td>Ownership</td><td>Cost per contract by channel — where the next marketing dollar goes</td></tr>
+            <tr><td class="leakname">Acquisitions Activity</td><td>Manager</td><td>Calls, conversations, offers and speed-to-lead per rep</td></tr>
+            <tr><td class="leakname">Stage Conversion</td><td>Manager</td><td>Where deals die and how long they sit before dying</td></tr>
+            <tr><td class="leakname">Dispo Performance</td><td>Dispo lead</td><td>Days to assign, buyer engagement, deals at risk</td></tr>
+            <tr><td class="leakname">Transaction Board</td><td>TC</td><td>Every deal under contract with its next deadline</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- HANDOFF -->
+    <section class="page" data-page="handoff">
+      <div class="eyebrow">Week 6 · Delivery</div>
+      <h1 class="title">Testing, snapshot, docs &amp; handoff.</h1>
+      <p class="lede">The part that decides whether this is a system your team uses or a system your team works around. Explicitly scoped as its own phase rather than something squeezed in at the end.</p>
+
+      <div class="panel" style="margin-top:22px">
+        <div id="handoffWrap"></div>
+      </div>
+
+      <div class="callout">
+        <b>On the snapshot specifically:</b> because the build is snapshot-packaged and version-tagged, expanding into a second market, spinning up a new entity, or rolling back a change you don't like is a clone rather than a rebuild. That's worth more than any individual workflow in here.
+      </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="page" data-page="questions">
+      <div class="eyebrow">What I'd need from you</div>
+      <h1 class="title">Discovery questions.</h1>
+      <p class="lede">These are what I'd walk through before finalising scope — the answers change the build meaningfully, so I'd rather ask than assume. Roughly a 60–90 minute conversation, ideally with whoever runs acquisitions and whoever runs dispo in the room.</p>
+
+      <div class="panel" style="margin-top:22px">
+        <div id="qWrap"></div>
+      </div>
+
+      <div class="callout">
+        <b>The most useful thing you could show me:</b> walk me through your last closed deal in whatever system you use now, start to finish, including the parts that annoyed you. Ten minutes of that tells me more than an hour of abstract questions — and it's usually where the two or three highest-value automations reveal themselves.
+      </div>
+
+      <div class="foot">
+        <span>GHL Success Path · GoHighLevel CRM build</span>
+        <span>Wholesaling build roadmap · v1.0</span>
+      </div>
+    </section>
+
+  </main>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
